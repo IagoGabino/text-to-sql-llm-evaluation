@@ -1,0 +1,8 @@
+model,Syntax Valid Rate,Execution Success Rate,Avg Execution Time (ms),Total Cost ($),Avg Prompt Tokens,Avg Completion Tokens,Avg Total Tokens
+ollama-duckdb-nsql,1.0,0.75,4079.8,0.0,1623.0,60.85,1683.85
+ollama-llama2,0.75,0.25,6471.65,0.0,1581.35,94.0,1675.35
+ollama-phi3,1.0,0.25,4235.75,0.0,1570.35,169.55,1739.9
+openrouter-gemini-2.5-flash,1.0,1.0,4197.6,0.0132,1383.0,97.65,1480.65
+openrouter-gpt-5-mini,1.0,1.0,13017.3,0.0244,1239.7,454.05,1693.75
+openrouter-gpt-oss-120b,1.0,1.0,6400.55,0.0049,1302.7,257.75,1560.45
+openrouter-qwen3-32b,1.0,1.0,20036.65,0.0094,1249.05,863.1,2112.15

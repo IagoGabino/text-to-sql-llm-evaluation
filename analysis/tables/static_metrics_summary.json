@@ -1,0 +1,218 @@
+{
+  "overall_stats": {
+    "Syntax Valid Rate": {
+      "ollama-duckdb-nsql": 1.0,
+      "ollama-llama2": 0.75,
+      "ollama-phi3": 1.0,
+      "openrouter-gemini-2.5-flash": 1.0,
+      "openrouter-gpt-5-mini": 1.0,
+      "openrouter-gpt-oss-120b": 1.0,
+      "openrouter-qwen3-32b": 1.0
+    },
+    "Execution Success Rate": {
+      "ollama-duckdb-nsql": 0.75,
+      "ollama-llama2": 0.25,
+      "ollama-phi3": 0.25,
+      "openrouter-gemini-2.5-flash": 1.0,
+      "openrouter-gpt-5-mini": 1.0,
+      "openrouter-gpt-oss-120b": 1.0,
+      "openrouter-qwen3-32b": 1.0
+    },
+    "Avg Execution Time (ms)": {
+      "ollama-duckdb-nsql": 4079.8,
+      "ollama-llama2": 6471.65,
+      "ollama-phi3": 4235.75,
+      "openrouter-gemini-2.5-flash": 4197.6,
+      "openrouter-gpt-5-mini": 13017.3,
+      "openrouter-gpt-oss-120b": 6400.55,
+      "openrouter-qwen3-32b": 20036.65
+    },
+    "Total Cost ($)": {
+      "ollama-duckdb-nsql": 0.0,
+      "ollama-llama2": 0.0,
+      "ollama-phi3": 0.0,
+      "openrouter-gemini-2.5-flash": 0.0132,
+      "openrouter-gpt-5-mini": 0.0244,
+      "openrouter-gpt-oss-120b": 0.0049,
+      "openrouter-qwen3-32b": 0.0094
+    },
+    "Avg Prompt Tokens": {
+      "ollama-duckdb-nsql": 1623.0,
+      "ollama-llama2": 1581.35,
+      "ollama-phi3": 1570.35,
+      "openrouter-gemini-2.5-flash": 1383.0,
+      "openrouter-gpt-5-mini": 1239.7,
+      "openrouter-gpt-oss-120b": 1302.7,
+      "openrouter-qwen3-32b": 1249.05
+    },
+    "Avg Completion Tokens": {
+      "ollama-duckdb-nsql": 60.85,
+      "ollama-llama2": 94.0,
+      "ollama-phi3": 169.55,
+      "openrouter-gemini-2.5-flash": 97.65,
+      "openrouter-gpt-5-mini": 454.05,
+      "openrouter-gpt-oss-120b": 257.75,
+      "openrouter-qwen3-32b": 863.1
+    },
+    "Avg Total Tokens": {
+      "ollama-duckdb-nsql": 1683.85,
+      "ollama-llama2": 1675.35,
+      "ollama-phi3": 1739.9,
+      "openrouter-gemini-2.5-flash": 1480.65,
+      "openrouter-gpt-5-mini": 1693.75,
+      "openrouter-gpt-oss-120b": 1560.45,
+      "openrouter-qwen3-32b": 2112.15
+    }
+  },
+  "complexity_breakdown": [
+    {
+      "model": "ollama-duckdb-nsql",
+      "complexity": "complex",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 0.5714,
+      "Avg Execution Time (ms)": 6427.8571
+    },
+    {
+      "model": "ollama-duckdb-nsql",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 0.75,
+      "Avg Execution Time (ms)": 3418.625
+    },
+    {
+      "model": "ollama-duckdb-nsql",
+      "complexity": "simple",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 1850.4
+    },
+    {
+      "model": "ollama-llama2",
+      "complexity": "complex",
+      "Syntax Valid Rate": 0.7143,
+      "Execution Success Rate": 0.0,
+      "Avg Execution Time (ms)": 8501.4286
+    },
+    {
+      "model": "ollama-llama2",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 0.875,
+      "Execution Success Rate": 0.375,
+      "Avg Execution Time (ms)": 5218.625
+    },
+    {
+      "model": "ollama-llama2",
+      "complexity": "simple",
+      "Syntax Valid Rate": 0.6,
+      "Execution Success Rate": 0.4,
+      "Avg Execution Time (ms)": 5634.8
+    },
+    {
+      "model": "ollama-phi3",
+      "complexity": "complex",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 0.0,
+      "Avg Execution Time (ms)": 5742.5714
+    },
+    {
+      "model": "ollama-phi3",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 0.25,
+      "Avg Execution Time (ms)": 3061.875
+    },
+    {
+      "model": "ollama-phi3",
+      "complexity": "simple",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 0.6,
+      "Avg Execution Time (ms)": 4004.4
+    },
+    {
+      "model": "openrouter-gemini-2.5-flash",
+      "complexity": "complex",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 4367.0
+    },
+    {
+      "model": "openrouter-gemini-2.5-flash",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 4104.25
+    },
+    {
+      "model": "openrouter-gemini-2.5-flash",
+      "complexity": "simple",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 4109.8
+    },
+    {
+      "model": "openrouter-gpt-5-mini",
+      "complexity": "complex",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 16590.5714
+    },
+    {
+      "model": "openrouter-gpt-5-mini",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 11351.875
+    },
+    {
+      "model": "openrouter-gpt-5-mini",
+      "complexity": "simple",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 10679.4
+    },
+    {
+      "model": "openrouter-gpt-oss-120b",
+      "complexity": "complex",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 7872.5714
+    },
+    {
+      "model": "openrouter-gpt-oss-120b",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 6251.75
+    },
+    {
+      "model": "openrouter-gpt-oss-120b",
+      "complexity": "simple",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 4577.8
+    },
+    {
+      "model": "openrouter-qwen3-32b",
+      "complexity": "complex",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 32607.1429
+    },
+    {
+      "model": "openrouter-qwen3-32b",
+      "complexity": "moderate",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 16040.5
+    },
+    {
+      "model": "openrouter-qwen3-32b",
+      "complexity": "simple",
+      "Syntax Valid Rate": 1.0,
+      "Execution Success Rate": 1.0,
+      "Avg Execution Time (ms)": 8831.8
+    }
+  ],
+  "total_queries": 140,
+  "models_analyzed": 7
+}

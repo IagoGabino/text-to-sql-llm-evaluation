@@ -1,0 +1,101 @@
+version: '3.8'
+
+services:
+  # ============================================
+  # PostgreSQL Database Service
+  # ============================================
+  postgres:
+    image: postgres:15-alpine
+    container_name: llm_eval_postgres
+    restart: unless-stopped
+    
+    # Environment variables for PostgreSQL
+    environment:
+      # Database credentials
+      POSTGRES_DB: ${DB_NAME:-llm_sql_eval}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Database password must be set in .env file}
+      POSTGRES_INITDB_ARGS: "-E UTF8 --locale=C"
+      
+      # Seed data preset configuration
+      SEED_PRESET: ${SEED_PRESET:-large}
+      
+      # Database connection info for seed loader
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME:-llm_sql_eval}
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD}
+      
+      # Performance tuning parameters
+      POSTGRES_SHARED_BUFFERS: ${DB_SHARED_BUFFERS:-256MB}
+      POSTGRES_WORK_MEM: ${DB_WORK_MEM:-16MB}
+      POSTGRES_MAINTENANCE_WORK_MEM: ${DB_MAINTENANCE_WORK_MEM:-128MB}
+      POSTGRES_EFFECTIVE_CACHE_SIZE: ${DB_EFFECTIVE_CACHE_SIZE:-512MB}
+      POSTGRES_CHECKPOINT_COMPLETION_TARGET: ${DB_CHECKPOINT_COMPLETION_TARGET:-0.9}
+      POSTGRES_WAL_BUFFERS: ${DB_WAL_BUFFERS:-16MB}
+      POSTGRES_DEFAULT_STATISTICS_TARGET: ${DB_DEFAULT_STATISTICS_TARGET:-100}
+      POSTGRES_RANDOM_PAGE_COST: ${DB_RANDOM_PAGE_COST:-1.1}
+      POSTGRES_EFFECTIVE_IO_CONCURRENCY: ${DB_EFFECTIVE_IO_CONCURRENCY:-200}
+      POSTGRES_MAX_CONNECTIONS: ${DB_MAX_CONNECTIONS:-100}
+    
+    # Port mapping
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    
+    # Volume configuration
+    volumes:
+      # Named volume for data persistence
+      - postgres_data:/var/lib/postgresql/data
+      
+      # Mount init scripts (executed only on first run)
+      - ./database/schema:/docker-entrypoint-initdb.d:ro
+      
+      # Mount seed data (read-only to prevent accidental modification)
+      - ./database/seed-data/generated:/seed-data/generated:ro
+      
+      # Mount seed loader scripts (read-only)
+      - ./database/seed-loader:/app/seed-loader:ro
+      
+      # Mount custom PostgreSQL configuration
+      - ./database/config/postgresql.conf:/etc/postgresql/postgresql.conf:ro
+      
+      # Optional: Mount logs directory
+      - ./logs/postgres:/var/log/postgresql
+    
+    # Custom command to use our postgresql.conf
+    command: 
+      - "postgres"
+      - "-c"
+      - "config_file=/etc/postgresql/postgresql.conf"
+    
+    # Health check configuration
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-llm_sql_eval}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    
+    # Network configuration
+    networks:
+      - llm_eval_network
+
+# ============================================
+# Named Volumes
+# ============================================
+volumes:
+  postgres_data:
+    driver: local
+    name: llm_eval_postgres_data
+
+# ============================================
+# Networks
+# ============================================
+networks:
+  llm_eval_network:
+    driver: bridge
+    name: llm_eval_network
+    ipam:
+      config:
+        - subnet: 172.27.0.0/16

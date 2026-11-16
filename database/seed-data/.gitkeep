@@ -1,0 +1,3 @@
+# This file ensures the seed-data directory structure is tracked in git
+# The generated/ subdirectory will contain CSV files that ARE committed to git
+# Team members will pull these CSV files to ensure consistent, reproducible data

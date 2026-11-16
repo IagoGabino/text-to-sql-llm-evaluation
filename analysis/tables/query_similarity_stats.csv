@@ -1,0 +1,10 @@
+,tfidf_similarity,tfidf_similarity,tfidf_similarity,tfidf_similarity,embedding_similarity,embedding_similarity,embedding_similarity,embedding_similarity
+,mean,std,min,max,mean,std,min,max
+model,,,,,,,,
+ollama-duckdb-nsql,0.6943,0.1778,0.4334,0.972,0.8907,0.0768,0.7471,0.9882
+ollama-llama2,0.5593,0.1863,0.2536,0.8624,0.8481,0.0688,0.6564,0.9453
+ollama-phi3,0.5173,0.1808,0.063,0.8461,0.7932,0.0956,0.6048,0.9465
+openrouter-gemini-2.5-flash,0.7462,0.1223,0.5139,0.9417,0.9336,0.0376,0.848,0.9809
+openrouter-gpt-5-mini,0.7424,0.1485,0.5002,1.0,0.9173,0.0603,0.7962,1.0
+openrouter-gpt-oss-120b,0.8231,0.1222,0.5863,1.0,0.9407,0.0331,0.8868,1.0
+openrouter-qwen3-32b,0.7718,0.1198,0.4571,0.9773,0.9157,0.0577,0.7184,0.9821

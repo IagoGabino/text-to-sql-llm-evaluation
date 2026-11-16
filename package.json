@@ -1,0 +1,16 @@
+{
+  "name": "tp-final-bda",
+  "version": "1.0.0",
+  "description": "LLM SQL Evaluation System - Final BDA Project",
+  "scripts": {
+    "db:seed": "docker run --rm --network llm_eval_network -v \"%cd%/database/seeds:/work\" -v \"%cd%/.env:/repo/.env:ro\" -w /work -e DB_HOST=postgres -e DB_PORT=5432 -e DB_NAME=llm_sql_eval -e DB_USER=postgres -e DB_PASSWORD=postgres123 node:20-bullseye bash -lc \"npm install --no-audit --no-fund 2>/dev/null && node seed.js\"",
+    "db:seed:local": "cd database\\seeds && npm install && node seed.js",
+    "seed:generate": "cd database/seed-generator && npm run generate",
+    "seed:validate": "cd database/seed-loader && npm run validate",
+    "seed:load": "cd database/seed-loader && npm run load",
+    "seed:test": "jest database/**/*.test.ts"
+  },
+  "keywords": ["database", "llm", "sql", "evaluation"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+model,correctness_mean,correctness_std,completeness_mean,completeness_std,efficiency_mean,efficiency_std,overall_score_mean,overall_score_std
+openrouter-gpt-oss-120b,8.8,1.24,9.6,0.88,9.65,0.59,9.21,0.94
+openrouter-qwen3-32b,8.4,1.73,9.2,1.44,9.2,1.06,8.75,1.35
+openrouter-gemini-2.5-flash,8.2,2.26,9.3,1.63,9.0,1.49,8.67,1.72
+openrouter-gpt-5-mini,8.2,2.65,9.05,2.39,8.35,2.21,8.52,2.35
+ollama-duckdb-nsql,5.55,4.21,5.4,4.83,6.15,4.06,5.55,4.26
+ollama-phi3,2.9,3.57,2.45,4.01,3.4,3.2,2.84,3.56
+ollama-llama2,2.7,3.39,1.75,3.32,3.65,3.63,2.47,3.3

@@ -1,0 +1,249 @@
+{
+  "overall_stats": {
+    "correctness_mean": {
+      "openrouter-gpt-oss-120b": 8.8,
+      "openrouter-qwen3-32b": 8.4,
+      "openrouter-gemini-2.5-flash": 8.2,
+      "openrouter-gpt-5-mini": 8.2,
+      "ollama-duckdb-nsql": 5.55,
+      "ollama-phi3": 2.9,
+      "ollama-llama2": 2.7
+    },
+    "correctness_std": {
+      "openrouter-gpt-oss-120b": 1.24,
+      "openrouter-qwen3-32b": 1.73,
+      "openrouter-gemini-2.5-flash": 2.26,
+      "openrouter-gpt-5-mini": 2.65,
+      "ollama-duckdb-nsql": 4.21,
+      "ollama-phi3": 3.57,
+      "ollama-llama2": 3.39
+    },
+    "completeness_mean": {
+      "openrouter-gpt-oss-120b": 9.6,
+      "openrouter-qwen3-32b": 9.2,
+      "openrouter-gemini-2.5-flash": 9.3,
+      "openrouter-gpt-5-mini": 9.05,
+      "ollama-duckdb-nsql": 5.4,
+      "ollama-phi3": 2.45,
+      "ollama-llama2": 1.75
+    },
+    "completeness_std": {
+      "openrouter-gpt-oss-120b": 0.88,
+      "openrouter-qwen3-32b": 1.44,
+      "openrouter-gemini-2.5-flash": 1.63,
+      "openrouter-gpt-5-mini": 2.39,
+      "ollama-duckdb-nsql": 4.83,
+      "ollama-phi3": 4.01,
+      "ollama-llama2": 3.32
+    },
+    "efficiency_mean": {
+      "openrouter-gpt-oss-120b": 9.65,
+      "openrouter-qwen3-32b": 9.2,
+      "openrouter-gemini-2.5-flash": 9.0,
+      "openrouter-gpt-5-mini": 8.35,
+      "ollama-duckdb-nsql": 6.15,
+      "ollama-phi3": 3.4,
+      "ollama-llama2": 3.65
+    },
+    "efficiency_std": {
+      "openrouter-gpt-oss-120b": 0.59,
+      "openrouter-qwen3-32b": 1.06,
+      "openrouter-gemini-2.5-flash": 1.49,
+      "openrouter-gpt-5-mini": 2.21,
+      "ollama-duckdb-nsql": 4.06,
+      "ollama-phi3": 3.2,
+      "ollama-llama2": 3.63
+    },
+    "overall_score_mean": {
+      "openrouter-gpt-oss-120b": 9.21,
+      "openrouter-qwen3-32b": 8.75,
+      "openrouter-gemini-2.5-flash": 8.67,
+      "openrouter-gpt-5-mini": 8.52,
+      "ollama-duckdb-nsql": 5.55,
+      "ollama-phi3": 2.84,
+      "ollama-llama2": 2.47
+    },
+    "overall_score_std": {
+      "openrouter-gpt-oss-120b": 0.94,
+      "openrouter-qwen3-32b": 1.35,
+      "openrouter-gemini-2.5-flash": 1.72,
+      "openrouter-gpt-5-mini": 2.35,
+      "ollama-duckdb-nsql": 4.26,
+      "ollama-phi3": 3.56,
+      "ollama-llama2": 3.3
+    }
+  },
+  "complexity_breakdown": [
+    {
+      "model": "ollama-duckdb-nsql",
+      "complexity": "complex",
+      "correctness": 4.0,
+      "completeness": 4.71,
+      "efficiency": 5.14,
+      "overall_score": 4.46
+    },
+    {
+      "model": "ollama-duckdb-nsql",
+      "complexity": "moderate",
+      "correctness": 5.62,
+      "completeness": 4.38,
+      "efficiency": 6.12,
+      "overall_score": 5.13
+    },
+    {
+      "model": "ollama-duckdb-nsql",
+      "complexity": "simple",
+      "correctness": 7.6,
+      "completeness": 8.0,
+      "efficiency": 7.6,
+      "overall_score": 7.74
+    },
+    {
+      "model": "ollama-llama2",
+      "complexity": "complex",
+      "correctness": 0.71,
+      "completeness": 0.0,
+      "efficiency": 1.14,
+      "overall_score": 0.38
+    },
+    {
+      "model": "ollama-llama2",
+      "complexity": "moderate",
+      "correctness": 3.38,
+      "completeness": 1.88,
+      "efficiency": 4.38,
+      "overall_score": 3.1
+    },
+    {
+      "model": "ollama-llama2",
+      "complexity": "simple",
+      "correctness": 4.4,
+      "completeness": 4.0,
+      "efficiency": 6.0,
+      "overall_score": 4.38
+    },
+    {
+      "model": "ollama-phi3",
+      "complexity": "complex",
+      "correctness": 1.14,
+      "completeness": 0.43,
+      "efficiency": 2.29,
+      "overall_score": 1.22
+    },
+    {
+      "model": "ollama-phi3",
+      "complexity": "moderate",
+      "correctness": 3.88,
+      "completeness": 3.0,
+      "efficiency": 4.75,
+      "overall_score": 3.66
+    },
+    {
+      "model": "ollama-phi3",
+      "complexity": "simple",
+      "correctness": 3.8,
+      "completeness": 4.4,
+      "efficiency": 2.8,
+      "overall_score": 3.82
+    },
+    {
+      "model": "openrouter-gemini-2.5-flash",
+      "complexity": "complex",
+      "correctness": 6.86,
+      "completeness": 9.29,
+      "efficiency": 8.57,
+      "overall_score": 7.96
+    },
+    {
+      "model": "openrouter-gemini-2.5-flash",
+      "complexity": "moderate",
+      "correctness": 8.5,
+      "completeness": 8.88,
+      "efficiency": 8.75,
+      "overall_score": 8.64
+    },
+    {
+      "model": "openrouter-gemini-2.5-flash",
+      "complexity": "simple",
+      "correctness": 9.6,
+      "completeness": 10.0,
+      "efficiency": 10.0,
+      "overall_score": 9.7
+    },
+    {
+      "model": "openrouter-gpt-5-mini",
+      "complexity": "complex",
+      "correctness": 7.0,
+      "completeness": 8.0,
+      "efficiency": 7.43,
+      "overall_score": 7.44
+    },
+    {
+      "model": "openrouter-gpt-5-mini",
+      "complexity": "moderate",
+      "correctness": 8.62,
+      "completeness": 9.38,
+      "efficiency": 8.62,
+      "overall_score": 8.88
+    },
+    {
+      "model": "openrouter-gpt-5-mini",
+      "complexity": "simple",
+      "correctness": 9.2,
+      "completeness": 10.0,
+      "efficiency": 9.2,
+      "overall_score": 9.47
+    },
+    {
+      "model": "openrouter-gpt-oss-120b",
+      "complexity": "complex",
+      "correctness": 8.0,
+      "completeness": 9.0,
+      "efficiency": 9.29,
+      "overall_score": 8.57
+    },
+    {
+      "model": "openrouter-gpt-oss-120b",
+      "complexity": "moderate",
+      "correctness": 9.12,
+      "completeness": 9.88,
+      "efficiency": 9.88,
+      "overall_score": 9.56
+    },
+    {
+      "model": "openrouter-gpt-oss-120b",
+      "complexity": "simple",
+      "correctness": 9.4,
+      "completeness": 10.0,
+      "efficiency": 9.8,
+      "overall_score": 9.55
+    },
+    {
+      "model": "openrouter-qwen3-32b",
+      "complexity": "complex",
+      "correctness": 7.14,
+      "completeness": 8.71,
+      "efficiency": 8.29,
+      "overall_score": 7.67
+    },
+    {
+      "model": "openrouter-qwen3-32b",
+      "complexity": "moderate",
+      "correctness": 9.5,
+      "completeness": 9.62,
+      "efficiency": 9.62,
+      "overall_score": 9.59
+    },
+    {
+      "model": "openrouter-qwen3-32b",
+      "complexity": "simple",
+      "correctness": 8.4,
+      "completeness": 9.2,
+      "efficiency": 9.8,
+      "overall_score": 8.9
+    }
+  ],
+  "judge_model": "x-ai/grok-code-fast-1",
+  "total_evaluations": 140,
+  "models_evaluated": 7
+}

@@ -1,0 +1,8 @@
+model,Row Count Accuracy,Column Similarity,Row Precision,Row Recall,Row F1,Overall Score,% Correct Row Count
+ollama-duckdb-nsql,0.6,0.5167,0.5411,0.5411,0.5411,0.5656,60.0
+ollama-llama2,0.1,0.2042,0.1829,0.244,0.1865,0.1468,10.0
+ollama-phi3,0.2,0.1383,0.2,0.2,0.2,0.1877,20.0
+openrouter-gemini-2.5-flash,0.9,0.7025,0.6884,0.6825,0.6853,0.7961,90.0
+openrouter-gpt-5-mini,0.9,0.717,0.7094,0.7038,0.7064,0.8053,90.0
+openrouter-gpt-oss-120b,0.9,0.7767,0.7941,0.7885,0.7911,0.8427,90.0
+openrouter-qwen3-32b,0.95,0.6892,0.7394,0.7338,0.7364,0.8338,95.0

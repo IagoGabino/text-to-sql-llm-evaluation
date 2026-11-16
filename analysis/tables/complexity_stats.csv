@@ -1,0 +1,22 @@
+model,complexity,Syntax Valid Rate,Execution Success Rate,Avg Execution Time (ms)
+ollama-duckdb-nsql,complex,1.0,0.5714,6427.8571
+ollama-duckdb-nsql,moderate,1.0,0.75,3418.625
+ollama-duckdb-nsql,simple,1.0,1.0,1850.4
+ollama-llama2,complex,0.7143,0.0,8501.4286
+ollama-llama2,moderate,0.875,0.375,5218.625
+ollama-llama2,simple,0.6,0.4,5634.8
+ollama-phi3,complex,1.0,0.0,5742.5714
+ollama-phi3,moderate,1.0,0.25,3061.875
+ollama-phi3,simple,1.0,0.6,4004.4
+openrouter-gemini-2.5-flash,complex,1.0,1.0,4367.0
+openrouter-gemini-2.5-flash,moderate,1.0,1.0,4104.25
+openrouter-gemini-2.5-flash,simple,1.0,1.0,4109.8
+openrouter-gpt-5-mini,complex,1.0,1.0,16590.5714
+openrouter-gpt-5-mini,moderate,1.0,1.0,11351.875
+openrouter-gpt-5-mini,simple,1.0,1.0,10679.4
+openrouter-gpt-oss-120b,complex,1.0,1.0,7872.5714
+openrouter-gpt-oss-120b,moderate,1.0,1.0,6251.75
+openrouter-gpt-oss-120b,simple,1.0,1.0,4577.8
+openrouter-qwen3-32b,complex,1.0,1.0,32607.1429
+openrouter-qwen3-32b,moderate,1.0,1.0,16040.5
+openrouter-qwen3-32b,simple,1.0,1.0,8831.8
