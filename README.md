@@ -12,6 +12,21 @@ Course project (Advanced Databases, UFMG). Group project.
 - `front/`: React and Vite UI for interactive tests.
 - `analysis/`: notebooks, figures and tables.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    UI["front/<br/>React + Vite UI"] --> API
+    BATCH["Batch runner<br/>20-question test suite"] --> API
+    subgraph API["backend/ (Node.js, TypeScript, Express)"]
+        PR["Load schema<br/>build prompt"] --> LLM["Call model<br/>OpenRouter or Ollama"]
+        LLM --> EX["Run generated SQL<br/>and reference SQL"]
+    end
+    EX <--> DB[("PostgreSQL 15<br/>e-commerce schema, Docker")]
+    EX --> SC["Scoring<br/>execution, result F1/Jaccard,<br/>query similarity, LLM judge"]
+    SC --> LOG["Logs and metrics<br/>analysis/ notebooks"]
+```
+
 ## Evaluation
 
 Each generated query is scored on four dimensions: syntax and execution success, result quality against the reference result (F1, Jaccard), similarity to the reference query (embeddings vs. TF-IDF) and an LLM-as-a-judge score for correctness, completeness and efficiency.
